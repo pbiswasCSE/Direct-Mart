@@ -12,7 +12,7 @@
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up">
-            <form>
+            <form th:action="@{/save}" th:object="${user}" method="post">
                 <h1>Create Account</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
@@ -22,6 +22,7 @@
                 </div>
                 <span>or use your email for registeration</span>
                 <input type="text" placeholder="Name">
+                <input type="NID" placeholder="NID">
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
                 <button>Sign Up</button>
