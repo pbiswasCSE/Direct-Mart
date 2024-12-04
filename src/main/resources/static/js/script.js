@@ -1,13 +1,17 @@
-const container = document.getElementById('container');
-const registerBtn = document.getElementById('register');
-const loginBtn = document.getElementById('login');
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('container');
+    const registerButton = document.getElementById('register');
+    const loginButton = document.getElementById('login');
 
-registerBtn.addEventListener('click', () => {
-    console.log("Register Button");
-    container.classList.add("active");
-});
+    // Show the sign-up form and update URL
+    registerButton.addEventListener('click', () => {
+        container.classList.add('active');
+        history.pushState({}, '', '/register');
+    });
 
-loginBtn.addEventListener('click', () => {
-    console.log("Login Button");
-    container.classList.remove("active");
+    // Show the sign-in form and update URL
+    loginButton.addEventListener('click', () => {
+        container.classList.remove('active');
+        history.pushState({}, '', '/login');
+    });
 });

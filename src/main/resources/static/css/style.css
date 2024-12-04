@@ -59,7 +59,7 @@ body::before {
 }
 
 .container button{
-    background-color: #512da8;
+    background-color: #8259e9;
     color: #ffffff;
     font-size: 12px;
     padding: 10px 45px;
@@ -173,7 +173,7 @@ body::before {
 }
 
 .toggle{
-    background-color: #512da8;
+    background-color: #8c6ed1;
     height: 100%;
     background: linear-gradient(to right, #5c6bc0, #512da8);
     color: #fff;
@@ -220,3 +220,15 @@ body::before {
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+}
+

@@ -14,6 +14,17 @@ public class User {
     private String email;
     private String password;
 
+
+    public User() {
+    }
+    
+    public User(String name, String nid, String email, String password) {
+        this.name = name;
+        this.nid = nid;
+        this.email = email;
+        this.password = password;
+    }
+
     // Getters and setters for each field
     public Long getId() {
         return id;
@@ -53,5 +64,15 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public static void addAttribute(String string, String user) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'addAttribute'");
+    }
+
+    public static void addAttribute(String string, User user) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'addAttribute'");
     }
 }
